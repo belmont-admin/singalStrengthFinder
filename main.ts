@@ -16,5 +16,5 @@ input.onButtonPressed(Button.B, function () {
 })
 let strength = 0
 basic.showString("F")
-radio.setGroup(255)
+radio.setGroup(1)
 radio.setTransmitPower(7)
