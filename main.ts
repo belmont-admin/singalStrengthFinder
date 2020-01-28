@@ -1,11 +1,11 @@
 radio.onReceivedString(function (receivedString) {
     strength = radio.receivedPacket(RadioPacketProperty.SignalStrength)
     if (strength > -60) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
+        pins.digitalWritePin(DigitalPin.P2, 1)
     } else if (strength > -80) {
         pins.digitalWritePin(DigitalPin.P1, 1)
     } else {
-        pins.digitalWritePin(DigitalPin.P2, 1)
+        pins.digitalWritePin(DigitalPin.P0, 1)
     }
 })
 input.onButtonPressed(Button.AB, function () {
